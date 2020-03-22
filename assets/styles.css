@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Cinzel&display=swap');
+body{
+    background: #0d1521;
+    color: #989898;
+    font-family: 'Cinzel', serif;
+}
+
+#todo-table{
+    position: relative;
+    width: 95%;
+    background: #090d13;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#todo-table form:after{
+    margin: 0;
+    content: '';
+    display: block;
+    clear: both;
+}
+
+input[type="text"]{
+   width: 100%;
+    padding: 20px;
+    background:#181c22;
+    border: 0;
+    float: left;
+    font-size: 20px;
+    color: #989898;
+    outline: none;
+    margin-bottom: 6px;
+}
+
+button{
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 1.3rem;
+    float: right;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 20px;
+    color: #989898;
+    outline: none;transition: .4s;
+}
+button:hover{
+    transform: scale(1.1);
+    transition: .4s;
+    border-radius: 2rem;
+}
+.inpb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+}
+
+li:hover{
+    text-decoration: line-through;
+    background: rgba(0,0,0,0.2);
+}
+
+.h{
+    position: relative;width: 100%;
+    display: flex;justify-content: center;align-items: center;
+    color: rgb(139, 73, 10);font-family: 'Acme', sans-serif;
+}
