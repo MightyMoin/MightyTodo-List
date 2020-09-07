@@ -16,6 +16,10 @@ var todoSchema = new mongoose.Schema({
 
 var Todo = mongoose.model('Todo' , todoSchema);
 
+app.get('/' , (req,res) => {
+    res.redirect("/todo");
+})
+
 app.get('/todo' , function(req , res) {
     // get data from input and store in mongodb
     Todo.find({} , (err , data) =>{
