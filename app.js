@@ -13,6 +13,7 @@ app.use(express.static('./assets'))
 //fire controller
 toDoController(app);
 
+const PORT = process.env.PORT || 3000
 //port
-app.listen(3000);
-console.log('3000 listening');
+app.listen(PORT);
+console.log(`${PORT} listening`);
