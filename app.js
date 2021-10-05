@@ -15,5 +15,7 @@ toDoController(app);
 
 const PORT = process.env.PORT || 3000
 //port
-app.listen(PORT);
+app.listen(PORT,(req,res)=>{
+    console.log("Server started");
+});
 console.log(`${PORT} listening`);
