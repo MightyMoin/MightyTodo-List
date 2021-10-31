@@ -15,11 +15,9 @@
     <div id="todo-table">
         <form action="">
             <div class="inpb">
-            <input class='inp'type="text" name="item" placeholder="ENTER YOUR TEXT HERE.." required>
             <button class="totalfrm" type="submit">Add Item</button></div>
             <ul>
-                <% for(var i=0; i < todos.length ;i++){ %>
-                <li><%= todos[i].item %></li>
+                <% for(var i=0; i < todos.length ;i++){ %>              
               <%  }%>
             </ul>
         </form>
